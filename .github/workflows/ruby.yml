@@ -44,6 +44,7 @@ jobs:
 
     - uses: GeekMasher/sarif-path-patching@main
       with:
+        root: '..'
         sarif: 'output.sarif.json'
     
     # Upload the SARIF file generated in the previous step
