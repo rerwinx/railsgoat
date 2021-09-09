@@ -44,8 +44,8 @@ jobs:
 
     - uses: GeekMasher/sarif-toolkit/relativepaths@main
       with:
-       # root: '..'
         sarif: 'output.sarif.json'
+        working: 'Sub1'
     
     # Upload the SARIF file generated in the previous step
     - name: Upload SARIF
