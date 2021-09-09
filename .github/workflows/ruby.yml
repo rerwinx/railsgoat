@@ -42,9 +42,9 @@ jobs:
       run: |
         brakeman -p ./Sub1 -f sarif -o output.sarif.json .
 
-    - uses: GeekMasher/sarif-path-patching@main
+    - uses: GeekMasher/sarif-toolkit/relativepaths@main
       with:
-        root: '..'
+       # root: '..'
         sarif: 'output.sarif.json'
     
     # Upload the SARIF file generated in the previous step
